@@ -35,36 +35,69 @@ pip install -r requirements.txt
 Garanta que as pastas e arquivos estejam organizados como segue no diretório do PythonAnywhere:
 
 flasky/
+
 ├── app/
-│   ├── __init__.py       # Configuração da aplicação Flask
-│   ├── email.py          # Função de envio de e-mails
-│   ├── models.py         # Modelos de banco de dados
+
+│   └── __init__.py       # Configuração da aplicação Flask
+ 
+│   └── email.py          # Função de envio de e-mails
+
+│   └── models.py         # Modelos de banco de dados
+
 │   └── main/
-│       ├── __init__.py   # Inicialização do blueprint principal
-│       ├── errors.py     # Tratamento de erros personalizados
-│       ├── forms.py      # Formulários da aplicação
-│       ├── views.py      # Controladores de rotas e lógica
+
+│   └──── __init__.py   # Inicialização do blueprint principal
+
+│   └──── errors.py     # Tratamento de erros personalizados
+
+│   └──── forms.py      # Formulários da aplicação
+
+│   └──── views.py      # Controladores de rotas e lógica
+
 ├── static/
-│   ├── css/
-│   │   └── styles.css    # Arquivo CSS customizado
-│   ├── js/
-│       └── common.js     # Scripts JavaScript comuns
+
+│   └── css/
+
+│   └──── styles.css
+
+│   └── js/
+
+|   └──── common.js
+
 ├── templates/
-│   ├── 404.html          # Página de erro 404
-│   ├── 500.html          # Página de erro 500
-│   ├── base.html         # Template base da aplicação
+
+│   └── 404.html          # Página de erro 404
+
+│   └── 500.html          # Página de erro 500
+
+│   └── base.html         # Template base da aplicação
+
 │   └── index.html        # Página inicial
+
 ├── tests/
-│   ├── __init__.py       # Inicialização dos testes
+
+│   └── __init__.py       # Inicialização dos testes
+
 │   └── test_example.py   # Teste de exemplo (renomear para seus testes)
+
 ├── venv/                 # Ambiente virtual Python (não commitado)
+
 ├── requirements.txt      # Dependências do projeto
+
 ├── config.py             # Configurações da aplicação
+
 ├── flasky.py             # Arquivo principal para execução
+
 ├── .env                  # Variáveis de ambiente (não commitado)
-└── README.md             # Documentação do projeto
+
+├── README.md             # Documentação do projeto
+
+
+
 
 3. Configuração das Variáveis de Ambiente
+   
+
 
 No arquivo *.env*, configure as credenciais do Mailgun e outros parâmetros necessários:
 
